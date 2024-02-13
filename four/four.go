@@ -11,5 +11,5 @@ func factorialRecursive(n uint64) uint64 {
 }
 
 func main() {
-	fmt.Println(factorialRecursive(10))
+	fmt.Println(factorialRecursive(5))
 }

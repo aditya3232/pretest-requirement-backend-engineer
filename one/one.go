@@ -1,20 +1,17 @@
-package main
+package one
 
-import "fmt"
+import (
+	"strings"
+)
 
-func isPalindrome(s string) bool {
+func IsPalindrome(d string) bool {
+
+	s := strings.ToLower(d)
+
 	for i := 0; i < len(s)/2; i++ {
 		if s[i] != s[len(s)-i-1] {
 			return false
 		}
 	}
 	return true
-}
-
-func main() {
-	input := "121"
-	fmt.Println(isPalindrome(input))
-
-	input = "semangat"
-	fmt.Println(isPalindrome(input))
 }
